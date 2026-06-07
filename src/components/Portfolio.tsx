@@ -1,39 +1,43 @@
 import { useState } from 'react';
+import CERT1 from '../assets/CERT1.png';
+import CERT2 from '../assets/CERT2.png';
+import CERT3 from '../assets/CERT3.png';
+import CERT4 from '../assets/CERT4.png';
 
 const Portfolio = () => {
     // Sample certificates data - replace with your actual images
     const certificates = [
         {
             id: 1,
-            title: "Web Development Certificate",
-            issuer: "Google",
-            date: "2024",
-            image: "https://via.placeholder.com/400x300/7c3aed/ffffff?text=Certificate+1",
-            description: "Completed comprehensive web development course"
+            title: "Bridging the Gap",
+            issuer: "Lyceum of San Pedro",
+            date: "2026",
+            image: CERT1,
+            description: "Navigating the Evolving Landscape of Cybersecurity"
         },
         {
             id: 2,
-            title: "React Masterclass",
-            issuer: "Meta",
-            date: "2024",
-            image: "https://via.placeholder.com/400x300/7c3aed/ffffff?text=Certificate+2",
+            title: "Architecting Cyber Defense",
+            issuer: "Lyceum of San Pedro",
+            date: "2026",
+            image: CERT2,
             description: "Advanced React concepts and best practices"
         },
         {
             id: 3,
-            title: "UI/UX Design Fundamentals",
-            issuer: "Coursera",
-            date: "2023",
-            image: "https://via.placeholder.com/400x300/7c3aed/ffffff?text=Certificate+3",
-            description: "User-centered design principles"
+            title: "Tech Nexus",
+            issuer: "Devcon",
+            date: "2024",
+            image: CERT3,
+            description: "Empowering Campus Innovators"
         },
         {
             id: 4,
-            title: "JavaScript Advanced",
-            issuer: "Microsoft",
-            date: "2023",
-            image: "https://via.placeholder.com/400x300/7c3aed/ffffff?text=Certificate+4",
-            description: "Advanced JavaScript programming"
+            title: "Cyber world Frontier",
+            issuer: "Colegio De San Pedro",
+            date: "2024",
+            image: CERT4,
+            description: "A seminar on Internet Safety and Ethical Hacking"
         },
     ];
 
@@ -43,7 +47,7 @@ const Portfolio = () => {
         <div className="min-h-screen flex items-center justify-center px-4 py-20">
             <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-12">
-                    <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
+                    <h2 className="font-heading text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
                         My Certificates
                     </h2>
                     <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full"></div>
@@ -56,7 +60,7 @@ const Portfolio = () => {
                     {certificates.map((cert) => (
                         <div
                             key={cert.id}
-                            className="bg-white/5 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:transform hover:scale-105 cursor-pointer"
+                            className="bg-purple-700/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-white/10 hover:border-purple-500/50 transition-all duration-300 hover:transform hover:scale-105 cursor-pointer"
                             onClick={() => setSelectedImage(cert.image)}
                         >
                             <div className="relative h-64 overflow-hidden">

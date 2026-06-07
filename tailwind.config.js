@@ -1,11 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        heading: ['"Space Grotesk"', "sans-serif"],
+        body: ["Inter", "sans-serif"],
+      },
+    },
   },
-  plugins: [require("tailwindcss-animate")]
-}
+  plugins: [require("tailwindcss-animate")],
+};

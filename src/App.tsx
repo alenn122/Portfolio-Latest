@@ -4,6 +4,7 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import Logos from './components/Logos';
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       <main>
         <section id="home">
           <Home />
+        </section>
+        <section id="logos">
+          <Logos />
         </section>
         <section id="about">
           <About />

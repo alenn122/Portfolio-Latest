@@ -4,8 +4,8 @@ const Footer = () => {
             <div className="max-w-6xl mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                     <div>
-                        <h3 className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
-                            <i>alenn</i>
+                        <h3 className="font-heading text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
+                            alenn
                         </h3>
                         <p className="text-gray-300">
                             BSIT Student passionate about creating amazing digital experiences.
