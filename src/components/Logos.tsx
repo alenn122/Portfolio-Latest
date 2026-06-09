@@ -16,7 +16,7 @@ const logos = [
 
 const LogoCarousel: React.FC = () => {
     const scrollContainerRef = useRef<HTMLDivElement>(null);
-    const animationRef = useRef<number>();
+    const animationRef = useRef<number | undefined>(undefined);
     const isHoveringRef = useRef(false);
 
     useEffect(() => {
