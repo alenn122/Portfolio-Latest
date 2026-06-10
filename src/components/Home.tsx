@@ -1,4 +1,4 @@
-import hero from '../assets/hero.png';
+import alenn from '../assets/alenn.png';
 
 const Home = () => {
     return (
@@ -9,7 +9,7 @@ const Home = () => {
                 <div className="text-center md:text-left flex-1">
 
                     {/* Main Heading */}
-                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mt-10">
                         <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
                             Hey! My name is
                         </span>
@@ -40,14 +40,12 @@ const Home = () => {
                 </div>
 
                 {/* RIGHT COLUMN (Image replaces Decorative Element) */}
-                <div className="flex-1 flex justify-center">
-                    <div className="p-4 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/20">
+                <div className="flex-1 flex justify-center align-items-center">
                         <img
-                            src={hero}
+                            src={alenn}
                             alt="Profile"
-                            className="w-full max-w-md rounded-xl object-cover"
+                            className="w-full max-w-md rounded-3xl object-cover"
                         />
-                    </div>
                 </div>
 
             </div>
